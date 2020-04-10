@@ -1,0 +1,160 @@
+*{
+	box-sizing: border-box;
+	box-shadow: grey;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.head{
+	font-size: 30px;
+	text-align: left;
+	padding-top: 4px;
+}
+
+.icons{
+	width: 20px;
+	height: 30px;
+	display: inline-flex;
+	margin-left: 1000px;
+	font-size: 24px;
+}
+/*Navigation tab*/
+nav{
+	height: 60px;
+	background-color: #81ecec;
+	display: flex;
+	justify-content: space-around;
+	align-items: center; 
+}
+.logo{
+	width: 40%;
+	color: #9084e3;
+	background-color: orange;
+}
+
+.menu a{
+	width: 60%;
+	background-color: purple;
+}
+
+/*.menu a:hover{
+	text-decoration: none;
+}	
+*/
+/*Image slider*/
+.maindiv{
+	width: 70%;
+	height: 500px;
+	position: center;
+	left: 80%;
+	top: 50%;
+	background-image: url('Download.jpg');
+	background-size: 100% 100%;
+	box-shadow: 3px 5px 10px 2px;
+	padding-top: 200px;
+	animation: slider 10s infinite linear;
+}
+
+@keyframes slider{
+	0%{ background-image: url('Download.jpg'); }
+
+	20%{ background-image: url('Download1.jpg'); }
+
+	20%{ background-image: url('Download2.jpg'); }
+
+	60%{ background-image: url('Download3.jpg'); }
+}
+
+/*About Conatiner*/
+.lside{
+	width: 700px;
+	height: 520px;
+	background-color: lightgrey;
+	padding-left: 10px;
+	border-radius: 20px;
+	margin: 10px;
+	text-align: left;
+	float: left; 
+}
+.rside{
+	width: 600px;
+	height: 300px;
+	background-color: lightgrey;
+	padding-left: 10px;
+	border-radius: 20px;
+	margin: 10px;
+	text-align: left;
+	float: right; 	
+}
+label{
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+/*footer starts*/
+.footer{
+	background-color: black;
+	position: relative;
+	height: 300px;
+	clear: both;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.footer a{
+	height: 60px;
+	width: 60px;
+	margin: 10px;
+	background-color: #f5f6fa;
+	text-align: center; 
+	border-radius: 50px;
+	box-shadow: 1px 4px 2px 2px #dcdde1;
+	line-height: 65px;
+	position: relative;
+	overflow: hidden;
+}
+
+.fa-instagram{
+	color: #e84393;
+}
+.fa-facebook{
+	color: blue;
+}
+.fa-whatsapp{
+	color: green;
+}
+
+.footer a i{
+	transition: all 0.20s linear;
+}
+
+.footer a:hover .fa{
+	transform: scale(1.5);
+	/*color: black;*/
+}
+
+.footer a:before{
+	content: "";
+	width: 120%;
+	height: 120%;
+	position: absolute;
+	top: 90%;
+	left: -50%;
+	background-color: black;
+	transform: rotate(65deg);
+}
+
+.footer a:hover:before{
+	animation: socialicons 4.0s 4;
+	animation-fill-mode: forwards; 
+}
+
+@keyframes socialicons{
+	0% { top: 90%; left: -50%; }
+	50% { top: -60%; left: -10%; }
+	100% { top: -10%; left: -10%; }
+}
+/*footer ends*/
